@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -52,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608392783234</updated>
       <workItem from="1608392784333" duration="26384000" />
-      <workItem from="1608447827021" duration="24082000" />
+      <workItem from="1608447827021" duration="26302000" />
     </task>
     <servers />
   </component>
