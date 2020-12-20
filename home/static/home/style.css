@@ -1,0 +1,25 @@
+body{
+    background: white url("images/background.gif") no-repeat;
+    background-position: center;
+    background-size: 30%;
+    height: 500px;
+    border-top: 25px groove rosybrown;
+}
+#nav01 a{
+    color: saddlebrown;
+}
+
+#navbar{
+    background-color: black;
+}
+
+h1{
+    color: cadetblue;
+}
+p{
+    color: gray;
+}
+h6{
+    color: midnightblue;
+}
+

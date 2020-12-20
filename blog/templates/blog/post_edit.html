@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2 style="color:darkslateblue;">ℕ𝕖𝕨 𝕡𝕠𝕤𝕥</h2>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{form.as_p}}
+        <a style="background: lavender;" class="btn btn-default" href="{% url 'blog:post_list'%}"><span style="color:mediumpurple;" class="glyphicon glyphicon-th-list"></span></a>
+        <button style="background: lavender; color:mediumpurple;" type="submit" class="save btn btn-default">𝙎𝙖𝙫𝙚</button>
+    </form>
+{% endblock %}}

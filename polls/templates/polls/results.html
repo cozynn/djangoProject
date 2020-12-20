@@ -1,0 +1,19 @@
+{% extends 'polls/base.html' %}
+{% block content %}
+<h4 style= color:darkslategray;">{{question.question_text}}</h4>
+<ul>
+    {% for choice in question.choice_set.all %}
+    <li>{{choice.choice_text}} -- {{choice.votes}} vote{{choice.votes|pluralize}}</li>
+    {% endfor %}
+</ul><br>
+<a href="{% url 'polls:detail' question.id %}">&nbsp 𝒱𝑜𝓉𝑒 𝒶𝑔𝒶𝒾𝓃?</a>
+<br><a href="{% url 'polls:index'%}">&nbsp 𝐵𝒶𝒸𝓀 𝓉𝑜 𝐿𝒾𝓈𝓉</a>
+<br><br><br><br>
+<br><br>
+<center>
+    <h1>𝕊𝕝𝕪𝕥𝕙𝕖𝕣𝕚𝕟</h1><p>
+    <h6>𝔥𝔬𝔤𝔴𝔞𝔯𝔱𝔰 𝔰𝔠𝔥𝔬𝔬𝔩 𝔬𝔣 𝔴𝔦𝔱𝔠𝔥𝔠𝔯𝔞𝔣𝔱 𝔞𝔫𝔡 𝔴𝔦𝔷𝔞𝔯𝔡𝔯𝔶</h6>
+    <p>𝙷𝚊𝚙𝚙𝚒𝚗𝚎𝚜𝚜 𝚌𝚊𝚗 𝚋𝚎 𝚏𝚘𝚞𝚗𝚍 𝚎𝚟𝚎𝚗 𝚊𝚝 𝚝𝚑𝚎 𝚍𝚊𝚛𝚔𝚎𝚜𝚝 𝚘𝚏 𝚝𝚒𝚖𝚎𝚜<br>
+        𝚒𝚏 𝚘𝚗𝚎 𝚘𝚗𝚕𝚢 𝚛𝚎𝚖𝚎𝚖𝚋𝚎𝚛𝚜 𝚝𝚘 𝚝𝚞𝚛𝚗 𝚘𝚗 𝚝𝚑𝚎 𝚕𝚒𝚐𝚑𝚝..</p>
+</center>
+{% endblock %}
